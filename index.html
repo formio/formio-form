@@ -5,8 +5,13 @@
     <title>Formio Base Form</title>
     <meta name="description" content="A raw form to use with https://form.io">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.min.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- build:css css/app.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/formio/css/formio.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
     <script src="https://maps.google.com/maps/api/js"></script>
   </head>
   <body ng-app="formioForm">
@@ -17,17 +22,24 @@
     <!-- Add the form.io form. -->
     <formio src="'https://formio.form.io/app/api/user/register'"></formio>
 
-    <!-- Include dependencies -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/angular-moment/angular-moment.min.js"></script>
-    <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
-    <script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js"></script>
-    <script src="bower_components/signature_pad/signature_pad.min.js"></script>
-    <script src="bower_components/formio/dist/formio.min.js"></script>
+    <!-- build:js js/app.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="bower_components/angular-paginate-anything/dist/paginate-anything-tpls.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/angular-moment/angular-moment.js"></script>
+    <script src="bower_components/signature_pad/signature_pad.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/formio/dist/formio.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
     <script type="text/javascript">
       angular.module('formioForm', ['formio']);
     </script>

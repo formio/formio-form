@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "formio": "~0.0.4"
+    "formio": "~0.0.22"
   }
 }
